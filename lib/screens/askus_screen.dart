@@ -1,7 +1,11 @@
+import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/question_item.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/search_box.dart';
+import 'package:Srilanka_Driving_Exam_App/widgets/tab_item.dart';
 import 'package:flutter/material.dart';
 import '../dummy_data.dart';
 
@@ -155,6 +159,7 @@ class _AskUsScreenState extends State<AskUsScreen> {
         foregroundColor: Colors.black,
         backgroundColor: Colors.yellow,
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }

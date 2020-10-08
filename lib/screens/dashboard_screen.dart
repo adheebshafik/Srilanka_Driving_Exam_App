@@ -123,7 +123,7 @@ class DashboardScreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 50),
+                    margin: EdgeInsets.only(left: 45, right: 10),
                     //image decoration
                     // decoration: BoxDecoration(
                     // border: Border.all(color: Colors.yellow),
