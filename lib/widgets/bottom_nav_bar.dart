@@ -11,28 +11,21 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          GestureDetector(
-            onTap: () =>
-                Navigator.of(context).pushNamed(PracticeScreen.routeName),
-            child: TabItem(
-              text: 'Practice',
-              path: 'assets/images/image 37.png',
-            ),
+          TabItem(
+            text: 'Practice',
+            path: 'assets/images/image 37.png',
+            routeName: PracticeScreen.routeName,
           ),
-          GestureDetector(
-            onTap: () => Navigator.of(context).pushNamed('/'),
-            child: TabItem(
-              text: 'Home',
-              path: 'assets/images/image 34.png',
-            ),
+          TabItem(
+            text: 'Home',
+            path: 'assets/images/image 34.png',
+            routeName: '/',
           ),
-          GestureDetector(
-            onTap: () => Navigator.of(context).pushNamed(StudyScreen.routeName),
-            child: TabItem(
-              text: 'Study',
-              path: 'assets/images/image 22.png',
-            ),
-          )
+          TabItem(
+            text: 'Study',
+            path: 'assets/images/image 22.png',
+            routeName: StudyScreen.routeName,
+          ),
         ],
       ),
     );
