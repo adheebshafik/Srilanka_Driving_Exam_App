@@ -100,58 +100,64 @@ class _AskUsScreenState extends State<AskUsScreen> {
     // }).toList();
 
     return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Header(),
-              Back_Button(back_button_title: 'Ask Us'),
-              Padding(
-                padding: const EdgeInsets.only(left: 25.0, top: 10),
-                child: Text(
-                  'Quesions and Answer forum',
-                  style: Theme.of(context).textTheme.bodyText1,
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/images/BackgroundImage.png"),
+                fit: BoxFit.cover)),
+        child: ListView(
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Header(),
+                Back_Button(back_button_title: 'Ask Us'),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0, top: 10),
+                  child: Text(
+                    'Quesions and Answer forum',
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                )
+              ],
+            ),
+            SearchBox(
+              onChanged: (value) => {},
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0, top: 10),
+              child: Text(
+                'Most Frequent',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
                 ),
-              )
-            ],
-          ),
-          SearchBox(
-            onChanged: (value) => {},
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 25.0, top: 10),
-            child: Text(
-              'Most Frequent',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 15,
               ),
             ),
-          ),
-          Column(
-            children: DUMMY_QUESTIONS
-                .map((question) =>
-                    QuestionItem(id: question.id, question: question.question))
-                .toList(),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 25.0, top: 15),
-            child: Text(
-              'Question regarding medical',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 15,
+            Column(
+              children: DUMMY_QUESTIONS
+                  .map((question) => QuestionItem(
+                      id: question.id, question: question.question))
+                  .toList(),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0, top: 15),
+              child: Text(
+                'Question regarding medical',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                ),
               ),
             ),
-          ),
-          Column(
-            children: DUMMY__MEDICAL_QUESTIONS
-                .map((question) =>
-                    QuestionItem(id: question.id, question: question.question))
-                .toList(),
-          ),
-        ],
+            Column(
+              children: DUMMY__MEDICAL_QUESTIONS
+                  .map((question) => QuestionItem(
+                      id: question.id, question: question.question))
+                  .toList(),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _showcontent,

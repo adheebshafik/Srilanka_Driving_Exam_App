@@ -13,43 +13,49 @@ class QuestionInfoScreen extends StatelessWidget {
         DUMMY_QUESTIONS.firstWhere((question) => question.id == questionID);
 
     return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Header(),
-              Back_Button(back_button_title: 'Ask Us'),
-              Padding(
-                padding: const EdgeInsets.only(left: 25.0, top: 10),
-                child: Text(
-                  'Quesions and Answer forum',
-                  style: Theme.of(context).textTheme.bodyText1,
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/images/BackgroundImage.png"),
+                fit: BoxFit.cover)),
+        child: ListView(
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Header(),
+                Back_Button(back_button_title: 'Ask Us'),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0, top: 10),
+                  child: Text(
+                    'Quesions and Answer forum',
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
                 ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 40, horizontal: 15),
-                child: Text(
-                  questionTitle.question,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 40, horizontal: 15),
+                  child: Text(
+                    questionTitle.question,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                    'Morbi ut magna commodo, egestas tortor at, convallis nibh.'
-                    'Pellentesque dignissim eu leo sed sollicitudin. Donec sed '
-                    'nulla laoreet, hendrerit risus eu, lobortis nunc. Mauris '
-                    'lacus tortor, bibendum id ipsum ut, accumsan convallis quam.'
-                    'Mauris placerat eros sit amet laoreet elementum. Sed suscipit'
-                    'vehicula mi a scelerisque.',
-                    style: Theme.of(context).textTheme.bodyText2),
-              )
-            ],
-          )
-        ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                      'Morbi ut magna commodo, egestas tortor at, convallis nibh.'
+                      'Pellentesque dignissim eu leo sed sollicitudin. Donec sed '
+                      'nulla laoreet, hendrerit risus eu, lobortis nunc. Mauris '
+                      'lacus tortor, bibendum id ipsum ut, accumsan convallis quam.'
+                      'Mauris placerat eros sit amet laoreet elementum. Sed suscipit'
+                      'vehicula mi a scelerisque.',
+                      style: Theme.of(context).textTheme.bodyText2),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
