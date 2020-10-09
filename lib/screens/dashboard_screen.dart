@@ -1,6 +1,7 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -35,6 +36,7 @@ class DashboardScreen extends StatelessWidget {
             Padding(padding: EdgeInsets.only(top: 20)),
 
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Stack(
                   children: <Widget>[
@@ -62,22 +64,26 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.fromLTRB(41, 130, 0, 0),
-                      // color: Colors.white70,
-                      child: Text(
-                        'View Schedule',
-                        style: TextStyle(
-                          color: Colors.black,
+                    GestureDetector(
+                      onTap: () => Navigator.of(context)
+                          .pushNamed(ViewScheduleScreen.routeName),
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.fromLTRB(41, 130, 0, 0),
+                        // color: Colors.white70,
+                        child: Text(
+                          'View Schedule',
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
                         ),
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(color: Colors.white10, spreadRadius: 4)
-                        ],
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(color: Colors.white10, spreadRadius: 4)
+                          ],
+                        ),
                       ),
                     )
                   ],

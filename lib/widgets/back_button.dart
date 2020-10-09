@@ -5,7 +5,7 @@ class Back_Button extends StatelessWidget {
 
   const Back_Button({
     Key key,
-    this.back_button_title,
+    @required this.back_button_title,
   }) : super(key: key);
 
   @override

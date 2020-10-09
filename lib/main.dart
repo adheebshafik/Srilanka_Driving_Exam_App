@@ -3,6 +3,7 @@ import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/question_info_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         StudyScreen.routeName: (ctx) => StudyScreen(),
         PracticeScreen.routeName: (ctx) => PracticeScreen(),
         AskUsScreen.routeName: (ctx) => AskUsScreen(),
-        QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen()
+        QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen(),
+        ViewScheduleScreen.routeName: (ctx) => ViewScheduleScreen()
       },
     );
   }
