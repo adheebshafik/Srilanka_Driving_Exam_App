@@ -30,7 +30,8 @@ class DashboardScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20, top: 30),
                   child: Text('Lets Get Your Learners Permit !',
                       style: Theme.of(context).textTheme.bodyText1),
-                )
+                ),
+                Container()
               ],
             ),
             Padding(padding: EdgeInsets.only(top: 20)),
