@@ -29,33 +29,106 @@ class DashboardScreen extends StatelessWidget {
               )
             ],
           ),
-          Padding(padding: EdgeInsets.only(top: 50)),
+          Padding(padding: EdgeInsets.only(top: 20)),
+
           Row(
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Container(
-                margin: EdgeInsets.only(left: 20),
-                width: 150,
-                height: 150,
-                color: Colors.grey[300],
-                child: Container(
-                  margin: EdgeInsets.all(5),
-                  height: 15,
-                  width: 25,
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                      borderRadius: BorderRadius.all(Radius.circular(250.0))),
-                ),
+              Stack(
+                children: <Widget>[
+                  Container(
+                    width: 140,
+                    height: 180,
+                    margin: EdgeInsets.only(left: 30),
+                    color: Colors.grey[300],
+                    child: Container(
+                      margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(color: Colors.black),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 5, top: 40),
+                        child: Text(
+                          '           4\n more Days',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    margin: EdgeInsets.fromLTRB(41, 130, 0, 0),
+                    // color: Colors.white70,
+                    child: Text(
+                      'View Schedule',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(color: Colors.white10, spreadRadius: 4)
+                      ],
+                    ),
+                  )
+                ],
               ),
               Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
-              Container(
-                // margin: EdgeInsets.only(right: ),
-                width: 150,
-                height: 150,
-                color: Colors.yellow[300],
+              Stack(
+                children: <Widget>[
+                  Container(
+                    width: 140,
+                    height: 180,
+                    margin: EdgeInsets.only(right: 30),
+                    color: Theme.of(context).primaryColor,
+                    child: Container(
+                      margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(color: Colors.black),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 5, top: 40),
+                        child: Text(
+                          '         37%\n completed',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.yellow,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    margin: EdgeInsets.fromLTRB(25, 130, 0, 0),
+                    // color: Colors.white70,
+                    child: Text(
+                      'View Detail',
+                      style: TextStyle(
+                        color: Colors.yellow,
+                      ),
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.black,
+                      boxShadow: [
+                        BoxShadow(color: Colors.white10, spreadRadius: 4)
+                      ],
+                    ),
+                  )
+                ],
               ),
             ],
           ),
+
           Padding(padding: EdgeInsets.symmetric(vertical: 10)),
           // Study Tile
           GestureDetector(
