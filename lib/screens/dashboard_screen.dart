@@ -45,7 +45,10 @@ class DashboardScreen extends StatelessWidget {
                       width: 140,
                       height: 180,
                       margin: EdgeInsets.only(left: 30),
-                      color: Colors.grey[300],
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.grey[100],
+                      ),
                       child: Container(
                         margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
                         decoration: BoxDecoration(
@@ -96,7 +99,9 @@ class DashboardScreen extends StatelessWidget {
                       width: 140,
                       height: 180,
                       margin: EdgeInsets.only(right: 30),
-                      color: Theme.of(context).primaryColor,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(10)),
                       child: Container(
                         margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
                         decoration: BoxDecoration(

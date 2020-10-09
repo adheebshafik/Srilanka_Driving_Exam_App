@@ -1,6 +1,6 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
-import 'package:Srilanka_Driving_Exam_App/screens/language_selection.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/language_selection_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/question_info_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';

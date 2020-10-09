@@ -76,6 +76,7 @@ class LanguageSelection extends StatelessWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
+                        Padding(padding: EdgeInsets.only(bottom: 30))
                       ],
                     ))
               ],

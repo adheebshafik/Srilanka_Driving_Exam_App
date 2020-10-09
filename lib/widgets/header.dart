@@ -1,4 +1,4 @@
-import 'package:Srilanka_Driving_Exam_App/screens/language_selection.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/language_selection_screen.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
@@ -21,7 +21,7 @@ class Header extends StatelessWidget {
           onTap: () =>
               Navigator.of(context).pushNamed(LanguageSelection.routeName),
           child: Container(
-            margin: EdgeInsets.only(left: 190, top: 40),
+            margin: EdgeInsets.only(left: 130, top: 40),
             //image decoration
             decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
