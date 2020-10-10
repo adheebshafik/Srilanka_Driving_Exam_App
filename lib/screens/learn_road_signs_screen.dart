@@ -46,7 +46,7 @@ class _LearnRoadSignsScreenState extends State<LearnRoadSignsScreen> {
                     ),
                     RoadSignsNavItem(
                       text: 'Alert\nSigns',
-                      textColor: Colors.white,
+                      textColor: Colors.yellow,
                       bgColor: Colors.black,
                     ),
                     RoadSignsNavItem(
