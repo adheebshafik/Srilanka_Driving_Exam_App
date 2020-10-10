@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
     return Row(
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.only(left: 20, top: 40),
+          padding: const EdgeInsets.only(left: 20, top: 10),
           child: Text(
             'Drivers Licence',
             style: Theme.of(context).textTheme.title,
@@ -22,7 +22,7 @@ class Header extends StatelessWidget {
           onTap: () =>
               Navigator.of(context).pushNamed(LanguageSelection.routeName),
           child: Container(
-              margin: EdgeInsets.only(right: 20, top: 40),
+              margin: EdgeInsets.only(right: 20, top: 10),
               //image decoration
               decoration: BoxDecoration(
                   border: Border.all(color: Colors.white),

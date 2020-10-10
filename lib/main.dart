@@ -1,10 +1,12 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/attempt_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/language_selection_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/question_info_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/widgets/quiz_progress.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +37,9 @@ class MyApp extends StatelessWidget {
         QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen(),
         ViewScheduleScreen.routeName: (ctx) => ViewScheduleScreen(),
         LanguageSelection.routeName: (ctx) => LanguageSelection(),
-        PracticeQuizScreen.routeName: (ctx) => PracticeQuizScreen()
+        PracticeQuizScreen.routeName: (ctx) => PracticeQuizScreen(),
+        AttemptQuizScreen.routeName: (ctx) => AttemptQuizScreen(),
+        QuizProgress.routeName: (ctx) => QuizProgress()
       },
     );
   }
