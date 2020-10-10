@@ -59,8 +59,14 @@ class _LearnRoadSignsScreenState extends State<LearnRoadSignsScreen> {
                 ),
               ),
             ),
+
+            SizedBox(
+              height: 20,
+            ),
+
             // GridView(
-            //   padding: const EdgeInsets.all(25),
+            //   // padding: const EdgeInsets.all(25),
+            //   padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
             //   children: DUMMY_ROAD_SIGNS
             //       .map((sign) => RoadSignItem(
             //             id: sign.id,
@@ -68,13 +74,27 @@ class _LearnRoadSignsScreenState extends State<LearnRoadSignsScreen> {
             //             signText: sign.signText,
             //           ))
             //       .toList(),
-            //   gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            //       maxCrossAxisExtent: 200,
-            //       childAspectRatio: 3 / 2,
-            //       crossAxisSpacing: 20,
-            //       mainAxisSpacing: 20),
-            // ),
-            Column(
+            //   // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            //   //   maxCrossAxisExtent: 200,
+            //   //   childAspectRatio: 3 / 2,
+            //   //   crossAxisSpacing: 20,
+            //   //   mainAxisSpacing: 20,
+            //   // ),
+            //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            //       crossAxisCount: 3,
+            //       mainAxisSpacing: 10.0,
+            //       crossAxisSpacing: 20.0,
+            //       childAspectRatio: 0.7),
+            // )
+
+            GridView.count(
+              padding: EdgeInsets.all(8),
+              crossAxisCount: 3,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 20,
+              childAspectRatio: .7,
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
               children: DUMMY_ROAD_SIGNS
                   .map((sign) => RoadSignItem(
                         id: sign.id,
@@ -82,6 +102,20 @@ class _LearnRoadSignsScreenState extends State<LearnRoadSignsScreen> {
                         signText: sign.signText,
                       ))
                   .toList(),
+            ),
+
+            // Column(
+            //   children: DUMMY_ROAD_SIGNS
+            //       .map((sign) => RoadSignItem(
+            //             id: sign.id,
+            //             imagePath: sign.imagePath,
+            //             signText: sign.signText,
+            //           ))
+            //       .toList(),
+            // )
+
+            SizedBox(
+              height: 25,
             )
           ],
         ),

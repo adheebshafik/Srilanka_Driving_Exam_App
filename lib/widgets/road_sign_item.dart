@@ -7,39 +7,41 @@ class RoadSignItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        Container(
-          width: 140,
-          height: 180,
-          margin: EdgeInsets.only(left: 30),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(imagePath),
-              fit: BoxFit.contain,
+    return Container(
+      width: 160,
+      height: 200,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey[400],
+            blurRadius: 2.0,
+            spreadRadius: 0.0,
+            offset: Offset(0, 4.0),
+          )
+        ],
+      ),
+      child: Column(
+        children: <Widget>[
+          Container(
+            width: 150,
+            height: 120,
+            margin: EdgeInsets.symmetric(horizontal: 15),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: BoxFit.contain,
+              ),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
+          Container(
             child: Text(
               signText,
               style: TextStyle(color: Colors.black, fontSize: 12),
             ),
           ),
-        ),
-        // Container(
-        //   padding: EdgeInsets.all(10),
-        //   margin: EdgeInsets.fromLTRB(60, 170, 0, 0),
-        //   // color: Colors.white70,
-        //   child: Text(
-        //     signText,
-
-        //   ),
-        // ),
-        SizedBox(
-          height: 25,
-        )
-      ],
+        ],
+      ),
     );
   }
 }

@@ -26,4 +26,14 @@ const DUMMY_ROAD_SIGNS = const [
       id: '3',
       imagePath: 'assets/images/image 24.png',
       signText: 'Highway Divided'),
+  RoadSign(id: '4', imagePath: 'assets/images/im.png', signText: 'No Parking'),
+  RoadSign(
+      id: '5', imagePath: 'assets/images/im2.png', signText: 'No Left Turn'),
+  RoadSign(id: '6', imagePath: 'assets/images/im3.png', signText: 'No Trucks'),
+  RoadSign(
+      id: '7', imagePath: 'assets/images/im4.png', signText: 'Signal Ahead'),
+  RoadSign(
+      id: '8', imagePath: 'assets/images/im5.png', signText: 'Road Narrows'),
+  RoadSign(
+      id: '9', imagePath: 'assets/images/im6.png', signText: 'Advisory Speed'),
 ];

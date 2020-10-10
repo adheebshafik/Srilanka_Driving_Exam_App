@@ -38,6 +38,10 @@ class MyApp extends StatelessWidget {
         AskUsScreen.routeName: (ctx) => AskUsScreen(),
         QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen(),
         ViewScheduleScreen.routeName: (ctx) => ViewScheduleScreen(),
+        LearnRoadSignsScreen.routeName: (ctx) => LearnRoadSignsScreen(),
+        RoadSignsStudyScreen.routeName: (ctx) => RoadSignsStudyScreen(),
+        TrafficSignalsStudyScreen.routeName: (ctx) =>
+            TrafficSignalsStudyScreen(),
         LanguageSelection.routeName: (ctx) => LanguageSelection(),
         PracticeQuizScreen.routeName: (ctx) => PracticeQuizScreen()
       },

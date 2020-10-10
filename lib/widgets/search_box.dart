@@ -17,6 +17,7 @@ class SearchBox extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
+          height: 50,
           margin: EdgeInsets.all(20),
           padding: EdgeInsets.symmetric(
             horizontal: 20,
