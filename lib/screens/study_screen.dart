@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/road_signs_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/traffic_signals_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
@@ -25,7 +26,7 @@ class StudyScreen extends StatelessWidget {
                 Header(),
                 Back_Button(
                   back_button_title: 'Study',
-                  routeName: '/',
+                  routeName: DashboardScreen.routeName,
                 ),
                 Padding(padding: EdgeInsets.only(top: 50)),
                 GestureDetector(

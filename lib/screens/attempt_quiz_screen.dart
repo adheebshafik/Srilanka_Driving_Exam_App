@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/quiz_navigation.dart';
@@ -42,7 +43,10 @@ class AttemptQuizScreenState extends State<AttemptQuizScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Header(),
-                Back_Button(back_button_title: 'Quiz'),
+                Back_Button(
+                  back_button_title: 'Quiz',
+                  routeName: PracticeQuizScreen.routeName,
+                ),
                 // Text("Question 1 of 40\nWhat does this sign say?")
                 Container(
                   margin: EdgeInsets.only(top: 20, left: 20),

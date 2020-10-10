@@ -1,5 +1,6 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/attempt_quiz_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
@@ -24,7 +25,7 @@ class PracticeQuizScreen extends StatelessWidget {
                 Header(),
                 Back_Button(
                   back_button_title: 'Practice',
-                  routeName: '/',
+                  routeName: DashboardScreen.routeName,
                 ),
                 //Study Tile
                 Container(

@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -24,7 +25,7 @@ class ViewScheduleScreen extends StatelessWidget {
             Header(),
             Back_Button(
               back_button_title: 'Schedule',
-              routeName: '/',
+              routeName: DashboardScreen.routeName,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 25.0, top: 10),

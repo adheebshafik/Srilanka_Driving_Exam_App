@@ -19,7 +19,10 @@ class QuestionListScreen extends StatelessWidget {
           scrollDirection: Axis.vertical,
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Question List'),
+            Back_Button(
+              back_button_title: 'Question List',
+              routeName: AttemptQuizScreen.routeName,
+            ),
             SizedBox(
               height: 10,
             ),
