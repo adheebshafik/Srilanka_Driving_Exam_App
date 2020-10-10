@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/dummy_data.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/road_signs_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -26,7 +27,10 @@ class _LearnRoadSignsScreenState extends State<LearnRoadSignsScreen> {
         child: ListView(
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Road Signs'),
+            Back_Button(
+              back_button_title: 'Road Signs',
+              routeName: RoadSignsStudyScreen.routeName,
+            ),
             SearchBox(hint: 'Search for Signs'),
             Container(
               height: 70,

@@ -22,7 +22,10 @@ class ViewScheduleScreen extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Schedule'),
+            Back_Button(
+              back_button_title: 'Schedule',
+              routeName: '/',
+            ),
             Padding(
               padding: const EdgeInsets.only(left: 25.0, top: 10),
               child: Text(

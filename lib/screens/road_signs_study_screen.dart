@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/screens/learn_road_signs_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -18,7 +19,10 @@ class RoadSignsStudyScreen extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Road Signs'),
+            Back_Button(
+              back_button_title: 'Road Signs',
+              routeName: StudyScreen.routeName,
+            ),
             SizedBox(
               height: 15,
             ),

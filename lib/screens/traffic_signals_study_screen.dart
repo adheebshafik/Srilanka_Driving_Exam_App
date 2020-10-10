@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -34,7 +35,7 @@ class TrafficSignalsStudyScreen extends StatelessWidget {
                 // Positioned(child: ),
                 SizedBox(height: 10),
                 Text(
-                  'Introductions',
+                  'Introduction',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -87,7 +88,10 @@ class TrafficSignalsStudyScreen extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Traffic Signals'),
+            Back_Button(
+              back_button_title: 'Traffic Signals',
+              routeName: StudyScreen.routeName,
+            ),
             SizedBox(
               height: 15,
             ),

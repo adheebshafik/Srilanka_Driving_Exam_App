@@ -23,7 +23,10 @@ class StudyScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Header(),
-                Back_Button(back_button_title: 'Study'),
+                Back_Button(
+                  back_button_title: 'Study',
+                  routeName: '/',
+                ),
                 Padding(padding: EdgeInsets.only(top: 50)),
                 GestureDetector(
                   onTap: () => Navigator.of(context)

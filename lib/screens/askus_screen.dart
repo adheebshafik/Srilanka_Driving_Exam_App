@@ -127,7 +127,10 @@ class _AskUsScreenState extends State<AskUsScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Header(),
-                Back_Button(back_button_title: 'Ask Us'),
+                Back_Button(
+                  back_button_title: 'Ask Us',
+                  routeName: "/",
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 25.0, top: 10),
                   child: Text(

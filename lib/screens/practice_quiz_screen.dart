@@ -19,7 +19,10 @@ class PracticeQuizScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Header(),
-            Back_Button(back_button_title: 'Practice'),
+            Back_Button(
+              back_button_title: 'Practice',
+              routeName: '/',
+            ),
             //Study Tile
             Container(
               margin: EdgeInsets.only(top: 50),

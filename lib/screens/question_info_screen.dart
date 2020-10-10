@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/dummy_data.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/Header.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,10 @@ class QuestionInfoScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Header(),
-                Back_Button(back_button_title: 'Ask Us'),
+                Back_Button(
+                  back_button_title: 'Ask Us',
+                  routeName: AskUsScreen.routeName,
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 25.0, top: 10),
                   child: Text(

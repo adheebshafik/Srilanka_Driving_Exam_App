@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 class Back_Button extends StatelessWidget {
   final back_button_title;
+  final String routeName;
 
   const Back_Button({
     Key key,
     @required this.back_button_title,
+    @required this.routeName,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed('/'),
+      onTap: () => Navigator.of(context).pushNamed(routeName),
       child: Row(
         children: <Widget>[
           Container(

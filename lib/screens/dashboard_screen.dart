@@ -78,7 +78,7 @@ class DashboardScreen extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () => Navigator.of(context)
-                          .pushReplacementNamed(ViewScheduleScreen.routeName),
+                          .pushNamed(ViewScheduleScreen.routeName),
                       child: Container(
                         padding: EdgeInsets.all(10),
                         margin: EdgeInsets.fromLTRB(41, 130, 0, 0),
