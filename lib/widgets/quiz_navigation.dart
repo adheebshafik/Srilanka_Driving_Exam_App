@@ -1,3 +1,5 @@
+import 'package:Srilanka_Driving_Exam_App/screens/learn_road_signs_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/road_signs_study_screen.dart';
 import 'package:flutter/material.dart';
 
 class QuizNavigation extends StatelessWidget {
@@ -29,7 +31,8 @@ class QuizNavigation extends StatelessWidget {
                 border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.all(Radius.circular(250.0))),
             child: GestureDetector(
-              onTap: () => Navigator.of(context).pushNamed("/"),
+              onTap: () => Navigator.of(context)
+                  .pushNamed(LearnRoadSignsScreen.routeName),
               child: Icon(
                 Icons.help_outline,
                 color: Colors.black,

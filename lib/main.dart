@@ -3,10 +3,18 @@ import 'package:Srilanka_Driving_Exam_App/screens/attempt_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/language_selection_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/learn_road_signs_screen.dart';
-// import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/question_info_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/question_list_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/quiz_results_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/road_signs_study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_1.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_2.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_3.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_4.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_5.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_6.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/startup_screen_7.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/traffic_signals_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
@@ -35,7 +43,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               )),
       routes: {
-        "/": (ctx) => DashboardScreen(),
+        DashboardScreen.routeName: (ctx) => DashboardScreen(),
         StudyScreen.routeName: (ctx) => StudyScreen(),
         AskUsScreen.routeName: (ctx) => AskUsScreen(),
         QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen(),
@@ -47,7 +55,16 @@ class MyApp extends StatelessWidget {
         LanguageSelection.routeName: (ctx) => LanguageSelection(),
         PracticeQuizScreen.routeName: (ctx) => PracticeQuizScreen(),
         AttemptQuizScreen.routeName: (ctx) => AttemptQuizScreen(),
-        QuizProgress.routeName: (ctx) => QuizProgress()
+        QuizProgress.routeName: (ctx) => QuizProgress(),
+        QuestionListScreen.routeName: (ctx) => QuestionListScreen(),
+        QuizResultsScreen.routeName: (ctx) => QuizResultsScreen(),
+        "/": (ctx) => StartupScreen1(),
+        StartupScreen2.routeName: (ctx) => StartupScreen2(),
+        StartupScreen3.routeName: (ctx) => StartupScreen3(),
+        StartupScreen4.routeName: (ctx) => StartupScreen4(),
+        StartupScreen5.routeName: (ctx) => StartupScreen5(),
+        StartupScreen6.routeName: (ctx) => StartupScreen6(),
+        StartupScreen7.routeName: (ctx) => StartupScreen7(),
       },
     );
   }

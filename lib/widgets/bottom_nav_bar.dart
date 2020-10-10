@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/tab_item.dart';
@@ -19,7 +20,7 @@ class BottomNavBar extends StatelessWidget {
           TabItem(
             text: 'Home',
             path: 'assets/images/image 34.png',
-            routeName: '/',
+            routeName: DashboardScreen.routeName,
           ),
           TabItem(
             text: 'Study',

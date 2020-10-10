@@ -1,4 +1,6 @@
 import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/question_list_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/quiz_results_screen.dart';
 import 'package:flutter/material.dart';
 
 class QuizProgress extends StatefulWidget {
@@ -148,7 +150,8 @@ class QuizProgressState extends State<QuizProgress> {
                         border: Border.all(color: Colors.yellow),
                         borderRadius: BorderRadius.all(Radius.circular(250.0))),
                     child: GestureDetector(
-                      onTap: () => Navigator.of(context).pushNamed("/"),
+                      onTap: () => Navigator.of(context)
+                          .pushNamed(QuestionListScreen.routeName),
                       child: Icon(
                         Icons.list,
                         color: Colors.black,
@@ -261,7 +264,8 @@ class QuizProgressState extends State<QuizProgress> {
                                       ),
                                     ),
                                     onPressed: () {
-                                      Navigator.of(context).pushNamed("/");
+                                      Navigator.of(context).pushNamed(
+                                          QuestionListScreen.routeName);
                                     },
                                   ),
                                 ),
@@ -290,7 +294,8 @@ class QuizProgressState extends State<QuizProgress> {
                                       ),
                                     ),
                                     onPressed: () {
-                                      Navigator.of(context).pushNamed("/");
+                                      Navigator.of(context).pushNamed(
+                                          QuizResultsScreen.routeName);
                                     },
                                   ),
                                 ),
@@ -320,7 +325,9 @@ class QuizProgressState extends State<QuizProgress> {
               ),
             ],
           ),
-          Divider(),
+          SizedBox(
+            height: 30,
+          ),
           LinearProgressIndicator(
             value: 0.5,
             backgroundColor: Colors.white,
