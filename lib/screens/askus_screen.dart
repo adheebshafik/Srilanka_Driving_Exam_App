@@ -1,4 +1,3 @@
-import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';

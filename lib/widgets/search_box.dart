@@ -23,8 +23,17 @@ class SearchBox extends StatelessWidget {
             vertical: 20 / 4,
           ),
           decoration: BoxDecoration(
-              color: Colors.grey[200].withOpacity(0.4),
-              borderRadius: BorderRadius.circular(20)),
+            color: Colors.grey[200].withOpacity(0.4),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey[350],
+                blurRadius: 2.0,
+                spreadRadius: 0.0,
+                offset: Offset(0, 4.0),
+              )
+            ],
+          ),
           child: TextField(
             onChanged: onChanged,
             style: TextStyle(color: Colors.black),

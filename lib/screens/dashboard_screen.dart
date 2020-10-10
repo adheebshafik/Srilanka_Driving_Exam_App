@@ -1,5 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
-import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -48,6 +48,14 @@ class DashboardScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey[100],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[400],
+                            blurRadius: 2.0,
+                            spreadRadius: 0.0,
+                            offset: Offset(3, 3),
+                          )
+                        ],
                       ),
                       child: Container(
                         margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
@@ -78,14 +86,18 @@ class DashboardScreen extends StatelessWidget {
                         child: Text(
                           'View Schedule',
                           style: TextStyle(
-                            color: Colors.black,
-                          ),
+                              color: Colors.black, fontWeight: FontWeight.bold),
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
                           color: Colors.white,
                           boxShadow: [
-                            BoxShadow(color: Colors.white10, spreadRadius: 4)
+                            BoxShadow(
+                              color: Colors.grey[400],
+                              blurRadius: 2.0,
+                              spreadRadius: 0.0,
+                              offset: Offset(0, 4.0),
+                            )
                           ],
                         ),
                       ),
@@ -100,8 +112,17 @@ class DashboardScreen extends StatelessWidget {
                       height: 180,
                       margin: EdgeInsets.only(right: 30),
                       decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor,
-                          borderRadius: BorderRadius.circular(10)),
+                        color: Theme.of(context).primaryColor,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[400],
+                            blurRadius: 2.0,
+                            spreadRadius: 0.0,
+                            offset: Offset(3, 3),
+                          )
+                        ],
+                      ),
                       child: Container(
                         margin: EdgeInsets.fromLTRB(23, 0, 23, 50),
                         decoration: BoxDecoration(
@@ -150,8 +171,18 @@ class DashboardScreen extends StatelessWidget {
               onTap: () =>
                   Navigator.of(context).pushNamed(StudyScreen.routeName),
               child: Container(
-                height: 90,
-                decoration: BoxDecoration(color: Colors.yellow),
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[400],
+                      blurRadius: 2.0,
+                      spreadRadius: 0.0,
+                      offset: Offset(0, 4.0),
+                    )
+                  ],
+                ),
                 padding: EdgeInsets.only(right: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -178,7 +209,7 @@ class DashboardScreen extends StatelessWidget {
                               BorderRadius.all(Radius.circular(250.0))),
                       child: Image.asset(
                         'assets/images/image 1.png',
-                        height: 75,
+                        height: 65,
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -189,10 +220,20 @@ class DashboardScreen extends StatelessWidget {
             // Practice Tile
             GestureDetector(
               onTap: () =>
-                  Navigator.of(context).pushNamed(PracticeScreen.routeName),
+                  Navigator.of(context).pushNamed(PracticeQuizScreen.routeName),
               child: Container(
-                height: 90,
-                decoration: BoxDecoration(color: Colors.black),
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[700],
+                      blurRadius: 2.0,
+                      spreadRadius: 0.0,
+                      offset: Offset(0, 4.0),
+                    )
+                  ],
+                ),
                 padding: EdgeInsets.only(right: 15),
                 margin: EdgeInsets.symmetric(vertical: 10),
                 child: Row(
@@ -239,7 +280,17 @@ class DashboardScreen extends StatelessWidget {
                   Navigator.of(context).pushNamed(AskUsScreen.routeName),
               child: Container(
                 height: 90,
-                decoration: BoxDecoration(color: Colors.grey[100]),
+                decoration: BoxDecoration(
+                  color: Colors.grey[100],
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[400],
+                      blurRadius: 2.0,
+                      spreadRadius: 0.0,
+                      offset: Offset(0, 4.0),
+                    )
+                  ],
+                ),
                 padding: EdgeInsets.only(right: 15),
                 margin: EdgeInsets.only(bottom: 50),
                 child: Row(
