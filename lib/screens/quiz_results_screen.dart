@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/screens/attempt_quiz_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/learn_road_signs_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
@@ -140,7 +141,8 @@ class QuizResultsScreen extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                Navigator.of(context).pushNamed("/");
+                                Navigator.of(context)
+                                    .pushNamed(DashboardScreen.routeName);
                               },
                             ),
                           ),
