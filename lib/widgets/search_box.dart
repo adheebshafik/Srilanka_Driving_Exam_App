@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SearchBox extends StatelessWidget {
+  final String hint;
+
   const SearchBox({
     Key key,
     this.onChanged,
+    @required this.hint,
   }) : super(key: key);
 
   final ValueChanged onChanged;
@@ -14,6 +17,7 @@ class SearchBox extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
+          height: 50,
           margin: EdgeInsets.all(20),
           padding: EdgeInsets.symmetric(
             horizontal: 20,
@@ -38,7 +42,7 @@ class SearchBox extends StatelessWidget {
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 icon: SvgPicture.asset("assets/images/search.svg"),
-                hintText: 'Type your question',
+                hintText: hint,
                 hintStyle: TextStyle(color: Colors.black26)),
           ),
         )

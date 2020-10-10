@@ -22,7 +22,24 @@ class _AskUsScreenState extends State<AskUsScreen> {
 
       builder: (BuildContext context) {
         return new AlertDialog(
-          title: new Text('Submit your Question'),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              new Text(
+                'Submit your Question',
+                style: TextStyle(fontSize: 17),
+              ),
+              IconButton(
+                  icon: Icon(
+                    Icons.cancel,
+                    color: Colors.yellow,
+                    size: 30,
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  })
+            ],
+          ),
           content: new SingleChildScrollView(
             child: new ListBody(
               children: [
@@ -121,6 +138,7 @@ class _AskUsScreenState extends State<AskUsScreen> {
               ],
             ),
             SearchBox(
+              hint: 'Type Your Question',
               onChanged: (value) => {},
             ),
             Padding(
