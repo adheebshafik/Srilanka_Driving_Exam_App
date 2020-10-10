@@ -1,4 +1,5 @@
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/attempt_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
@@ -110,11 +111,15 @@ class TrafficSignalsStudyScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            StudySectionItem(
-              title: 'Test Your Knowlegde',
-              subText:
-                  'Learn about all the different\nwarning signs and their meanings',
-              learnOrPractice: 'tap to practice',
+            GestureDetector(
+              onTap: () =>
+                  Navigator.of(context).pushNamed(AttemptQuizScreen.routeName),
+              child: StudySectionItem(
+                title: 'Test Your Knowlegde',
+                subText:
+                    'Learn about all the different\nwarning signs and their meanings',
+                learnOrPractice: 'tap to practice',
+              ),
             ),
             SizedBox(
               height: 10,

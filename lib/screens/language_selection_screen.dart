@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 
 class LanguageSelection extends StatelessWidget {
@@ -33,7 +34,8 @@ class LanguageSelection extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         GestureDetector(
-                          onTap: () => Navigator.of(context).pushNamed("/"),
+                          onTap: () => Navigator.of(context)
+                              .pushNamed(DashboardScreen.routeName),
                           child: Container(
                             // margin: EdgeInsets.only(top: 40),
                             //image decoration

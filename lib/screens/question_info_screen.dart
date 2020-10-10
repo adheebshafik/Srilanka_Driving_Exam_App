@@ -2,6 +2,7 @@ import 'package:Srilanka_Driving_Exam_App/dummy_data.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/Header.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
+import 'package:Srilanka_Driving_Exam_App/widgets/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class QuestionInfoScreen extends StatelessWidget {
@@ -61,6 +62,7 @@ class QuestionInfoScreen extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
