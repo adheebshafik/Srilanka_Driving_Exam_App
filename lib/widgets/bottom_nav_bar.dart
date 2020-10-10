@@ -1,4 +1,4 @@
-import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/practice_quiz_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/widgets/tab_item.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class BottomNavBar extends StatelessWidget {
           TabItem(
             text: 'Practice',
             path: 'assets/images/image 37.png',
-            routeName: PracticeScreen.routeName,
+            routeName: PracticeQuizScreen.routeName,
           ),
           TabItem(
             text: 'Home',

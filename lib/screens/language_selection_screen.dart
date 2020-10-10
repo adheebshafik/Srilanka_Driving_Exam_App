@@ -1,5 +1,3 @@
-import 'package:Srilanka_Driving_Exam_App/widgets/back_button.dart';
-import 'package:Srilanka_Driving_Exam_App/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class LanguageSelection extends StatelessWidget {
@@ -64,7 +62,7 @@ class LanguageSelection extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 15),
+                          margin: EdgeInsets.only(top: 15, bottom: 20),
                           //image decoration
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.white),

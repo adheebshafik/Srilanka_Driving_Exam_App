@@ -17,21 +17,17 @@ class Header extends StatelessWidget {
             style: Theme.of(context).textTheme.title,
           ),
         ),
+        Spacer(),
         GestureDetector(
           onTap: () =>
               Navigator.of(context).pushNamed(LanguageSelection.routeName),
           child: Container(
-            margin: EdgeInsets.only(left: 130, top: 40),
-            //image decoration
-            decoration: BoxDecoration(
-                border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.all(Radius.circular(250.0))),
-            child: Image.asset(
-              'assets/images/langSelect.png',
-              height: 25,
-              fit: BoxFit.fill,
-            ),
-          ),
+              margin: EdgeInsets.only(right: 20, top: 40),
+              //image decoration
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.all(Radius.circular(250.0))),
+              child: Icon(Icons.language)),
         ),
       ],
     );
