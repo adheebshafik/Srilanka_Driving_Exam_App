@@ -1,3 +1,4 @@
+import 'package:Srilanka_Driving_Exam_App/models/road_sign.dart';
 import 'package:flutter/material.dart';
 import 'models/question.dart';
 
@@ -14,4 +15,15 @@ const DUMMY__MEDICAL_QUESTIONS = const [
       id: '1',
       question: 'What are the documents required to get the medical report?'),
   Question(id: '2', question: 'How long is the medical report valid for?'),
+];
+
+const DUMMY_ROAD_SIGNS = const [
+  RoadSign(
+      id: '1', imagePath: 'assets/images/image 7.png', signText: 'Stop Sign'),
+  RoadSign(
+      id: '2', imagePath: 'assets/images/image 30.png', signText: 'One Way'),
+  RoadSign(
+      id: '3',
+      imagePath: 'assets/images/image 24.png',
+      signText: 'Highway Divided'),
 ];

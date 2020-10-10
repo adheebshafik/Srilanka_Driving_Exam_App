@@ -1,9 +1,12 @@
 import 'package:Srilanka_Driving_Exam_App/screens/askus_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/dashboard_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/language_selection_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/learn_road_signs_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/practice_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/question_info_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/road_signs_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/study_screen.dart';
+import 'package:Srilanka_Driving_Exam_App/screens/traffic_signals_study_screen.dart';
 import 'package:Srilanka_Driving_Exam_App/screens/view_schedule_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +38,11 @@ class MyApp extends StatelessWidget {
         AskUsScreen.routeName: (ctx) => AskUsScreen(),
         QuestionInfoScreen.routeName: (ctx) => QuestionInfoScreen(),
         ViewScheduleScreen.routeName: (ctx) => ViewScheduleScreen(),
-        LanguageSelection.routeName: (ctx) => LanguageSelection()
+        LanguageSelection.routeName: (ctx) => LanguageSelection(),
+        RoadSignsStudyScreen.routeName: (ctx) => RoadSignsStudyScreen(),
+        TrafficSignalsStudyScreen.routeName: (ctx) =>
+            TrafficSignalsStudyScreen(),
+        LearnRoadSignsScreen.routeName: (ctx) => LearnRoadSignsScreen(),
       },
     );
   }
