@@ -13,79 +13,75 @@ class StartupScreen7 extends StatelessWidget {
               image: AssetImage("assets/images/StartupPage7.png"),
               fit: BoxFit.cover),
         ),
-        child: ListView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Container(
-                      height: 45,
-                      // width: 60,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.yellow,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 2.0,
-                            spreadRadius: 0.0,
-                            offset: Offset(0, 4.0),
-                          )
-                        ],
-                      ),
-                      padding: EdgeInsets.symmetric(horizontal: 2),
-                      margin: EdgeInsets.only(top: 550),
-                      child: FlatButton(
-                        child: Text(
-                          'Previous',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 12,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.of(context)
-                              .pushNamed(StartupScreen6.routeName);
-                        },
+                Container(
+                  height: 45,
+                  // width: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.yellow,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 2.0,
+                        spreadRadius: 0.0,
+                        offset: Offset(0, 4.0),
+                      )
+                    ],
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 2),
+                  margin: EdgeInsets.only(bottom: 60),
+                  child: FlatButton(
+                    child: Text(
+                      'Previous',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12,
                       ),
                     ),
-                    Container(
-                      height: 45,
-                      // width: 60,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.yellow,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 2.0,
-                            spreadRadius: 0.0,
-                            offset: Offset(0, 4.0),
-                          )
-                        ],
-                      ),
-                      padding: EdgeInsets.symmetric(horizontal: 2),
-                      margin: EdgeInsets.only(top: 550),
-                      child: FlatButton(
-                        child: Text(
-                          'Next',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 12,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.of(context)
-                              .pushNamed(DashboardScreen.routeName);
-                        },
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(StartupScreen6.routeName);
+                    },
+                  ),
+                ),
+                Container(
+                  height: 45,
+                  // width: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.yellow,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 2.0,
+                        spreadRadius: 0.0,
+                        offset: Offset(0, 4.0),
+                      )
+                    ],
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 2),
+                  margin: EdgeInsets.only(bottom: 60),
+                  child: FlatButton(
+                    child: Text(
+                      'Next',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12,
                       ),
                     ),
-                  ],
-                )
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushNamed(DashboardScreen.routeName);
+                    },
+                  ),
+                ),
               ],
-            ),
+            )
           ],
         ),
       ),
